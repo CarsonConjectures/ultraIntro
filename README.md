@@ -75,9 +75,9 @@ Each time you call a file like this (above) the model has to boot up, and is thu
 ```{txt}
 # process images in batches of 50
 batch_size = 50
-    for i in range(0, len(image_files), batch_size):
-        batch = image_files[i:i + batch_size]
-        
-        # Predict using the model on the batch of images
-        results = model.predict(source=batch, show=True, stream=True, task='classify', save=False, conf=0.01)
+for i in range(0, len(image_files), batch_size):
+    batch = image_files[i:i + batch_size]
+    
+    # Predict using the model on the batch of images
+    results = model.predict(source=batch, show=True, stream=True, task='classify', save=False, conf=0.01)
 ```
