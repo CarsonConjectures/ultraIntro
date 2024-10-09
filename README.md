@@ -70,7 +70,8 @@ videoSource = "C:\\Users\\me\\path\\to\\video.mp4"  # run inference on saved vid
 videoSource = "C:\\Users\\me\\path\\to\\picture.png"  # run inference on saved photo
 ```
 
-Each time you call a file like this (above) the model has to boot up, and is thus VERY SLOW
+Each time you call a file like this (above) the model has to boot up, and is thus VERY SLOW. The model is fast, but writing the code by processing each image one by one will never make use of that speed. To increase the speed 1000000000000115515631563 fold, batch processing can be used: 
+(This is not in the repo, but was used in a different project of mine)
 
 ```{txt}
 # process images in batches of 50
